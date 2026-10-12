@@ -2,7 +2,7 @@
 
 # Sharanya Mondal
 
-Early-career developer building small, real tools for the unglamorous parts of APIs
+Early-career developer building small, real tools related to AI stuff
 
 [![Profile views](https://komarev.com/ghpvc/?username=Godavenger&color=1f6feb&style=flat-square&label=Profile+views)](https://github.com/Godavenger)
 [![Follow](https://img.shields.io/github/followers/Godavenger?style=flat-square&logo=github&label=Follow&color=1f6feb)](https://github.com/Godavenger)
