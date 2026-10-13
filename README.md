@@ -1,79 +1,84 @@
-<div align="center">
+<p align="center">
+  <img src="./assets/hero.svg" width="100%" alt="Sharanya Mondal — AI / ML Engineer in Progress. Research · Experimentation · Engineering. Curious Mind. Research-Driven. Builder at Heart." />
+</p>
 
-# Sharanya Mondal
+<p align="center">
+  <strong>COMPUTER VISION &nbsp; · &nbsp; DEEP LEARNING &nbsp; · &nbsp; AI RESEARCH &nbsp; · &nbsp; DSA</strong>
+</p>
 
-Early-career developer building small, real tools related to AI stuff
+<p align="center">
+  Building intelligent systems, exploring deep learning, and turning research ideas into practical applications.
+</p>
 
-[![Profile views](https://komarev.com/ghpvc/?username=Godavenger&color=1f6feb&style=flat-square&label=Profile+views)](https://github.com/Godavenger)
-[![Follow](https://img.shields.io/github/followers/Godavenger?style=flat-square&logo=github&label=Follow&color=1f6feb)](https://github.com/Godavenger)
+<p align="center">
+  <a href="#selected-work">Explore my work</a> &nbsp; / &nbsp;
+  <a href="#what-im-working-toward">What I'm learning</a> &nbsp; / &nbsp;
+  <a href="mailto:sharanyamondal9@gmail.com">Get in touch</a>
+</p>
 
-</div>
+---
 
-I'm Sharanya, early in my dev career, and I learn best by building. Pick a real problem, scope it down to something I can actually finish, and ship it where people can see it. I like developer tooling and the quiet gap between what an API's spec promises and what the service actually returns. The project below is my first public one. I'd rather finish one real thing than start ten.
+### A little about me
 
-## Featured project: driftcheck
+I'm **Sharanya**, an aspiring AI/ML engineer who learns by building, experimenting, and asking why a result happened. I'm interested in the space between a research idea and a system that works: comparing approaches, understanding their limitations, and making something useful from what I learn.
 
-**[driftcheck](https://github.com/Godavenger/driftcheck)** — a Python CLI that catches the moment a live API drifts from its OpenAPI contract.
+My focus is **computer vision and deep learning**, alongside stronger foundations in **data structures, algorithms, and software engineering**. I'm still building those foundations. These repositories are where I put them into practice.
 
-[![Live API conformance](https://img.shields.io/endpoint?url=https://godavenger.github.io/driftcheck/badge.json)](https://godavenger.github.io/driftcheck/)
-[![CI](https://github.com/Godavenger/driftcheck/actions/workflows/ci.yml/badge.svg)](https://github.com/Godavenger/driftcheck/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Godavenger/driftcheck/blob/main/LICENSE)
-![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)
+### Selected work
 
-Point it at an OpenAPI spec and the service running behind it. driftcheck calls the real endpoints, compares each response to the contract (status codes, and response schemas via `jsonschema`), and names exactly where the two disagree.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Godavenger/SatQuery-AI-SIH26167">01 / SatQuery AI</a></h3>
+      <p><strong>Computer vision · Earth observation · Research prototype</strong></p>
+      <p>Querying optical and SAR satellite imagery with visual evidence, confidence estimates, change analysis, and auditable reports.</p>
+      <p>The repository includes evaluation, calibration, and ablation artifacts. A place to explore how model choices affect the reliability of an answer.</p>
+      <p><code>Python</code> <code>PyTorch</code> <code>Rasterio</code> <code>FastAPI</code></p>
+      <p><a href="https://github.com/Godavenger/SatQuery-AI-SIH26167">Explore the project →</a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Godavenger/driftcheck">02 / driftcheck</a></h3>
+      <p><strong>Developer tooling · API contracts · Engineering</strong></p>
+      <p>A Python CLI that checks live APIs against their OpenAPI contracts and publishes conformance reports through GitHub Actions.</p>
+      <p><a href="https://github.com/Godavenger/driftcheck/actions/runs/38216061128">62 tests passed in CI</a> on 12 October 2026. Reports are available as JSON, Markdown, and HTML.</p>
+      <p><code>Python</code> <code>httpx</code> <code>JSON Schema</code> <code>pytest</code></p>
+      <p><a href="https://github.com/Godavenger/driftcheck">Explore the project →</a> &nbsp; <a href="https://godavenger.github.io/driftcheck/">View live report ↗</a></p>
+    </td>
+  </tr>
+</table>
 
-The part I like most is that it watches itself. A scheduled GitHub Action re-runs it against a live public API, the [Swagger Petstore](https://petstore3.swagger.io), and publishes the outcome two ways: the conformance badge above, and a self-contained, dark-mode HTML report on GitHub Pages. The verdict is encoded in the badge's content rather than the workflow's status, so it keeps reporting honestly: green while the API matches its contract, red the moment it stops.
+### What I'm working toward
 
-This is real drift, not a staged demo. In a recent run against the live Petstore:
+| Focus | Questions I'm learning to answer |
+| :--- | :--- |
+| **Computer vision** | How do preprocessing, representations, and model choices change the result? |
+| **Deep learning & research** | What makes a useful baseline? How do I compare experiments and explain their limitations? |
+| **AI systems** | How can I connect models, APIs, and interfaces into applications that are useful and testable? |
+| **DSA & fundamentals** | Why does an approach work, how much does it cost, and when should I choose something else? |
 
-> `GET /store/inventory` returned **500** — a status its published spec never documents.
+**Tools I'm working with:** `Python` · `PyTorch` · `scikit-learn` · `FastAPI` · `Git` · `pytest` · `GitHub Actions`
 
-- Outputs to console, JSON, Markdown, or a standalone HTML page.
-- Returns a non-zero exit code on drift, so it can gate a CI build instead of only reporting after the fact.
-- 45 passing tests, MIT-licensed, Python 3.11+, packaged with `uv`.
+### The way I want to work
 
-Contract testing isn't new. Schemathesis, Dredd, and oasdiff each cover parts of this, and part of why I built driftcheck was to understand the problem from the ground up. The angle I leaned into is the one they don't make easy: an always-on conformance badge with no infrastructure behind it. No database, no secrets, no server to keep alive.
+<p align="center">
+  <img src="./assets/learning-loop.svg" width="100%" alt="Conceptual learning cycle: learn the fundamentals, experiment with ideas, build practical applications, and improve through evidence and feedback." />
+</p>
 
-**Repo → [github.com/Godavenger/driftcheck](https://github.com/Godavenger/driftcheck) · Live report → [godavenger.github.io/driftcheck](https://godavenger.github.io/driftcheck/)**
+Start with a question. Build a baseline. Compare the evidence. Finish the project, document what changed, and carry the lesson into the next one.
 
-## The stack behind it
+### Building in the open
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Typer](https://img.shields.io/badge/Typer-2C3E50?style=flat-square)
-![httpx](https://img.shields.io/badge/httpx-005571?style=flat-square)
-![jsonschema](https://img.shields.io/badge/jsonschema-1F6FEB?style=flat-square)
-![OpenAPI](https://img.shields.io/badge/OpenAPI-6BA539?style=flat-square&logo=openapiinitiative&logoColor=white)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
-![Ruff](https://img.shields.io/badge/Ruff-261230?style=flat-square&logo=ruff&logoColor=D7FF64)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![uv](https://img.shields.io/badge/uv-DE5FE9?style=flat-square&logo=uv&logoColor=white)
+<a href="https://github.com/Godavenger?tab=overview">
+  <img src="./assets/activity.svg" width="100%" alt="Animated chart of Godavenger's actual public GitHub contributions over the last twelve weeks, updated daily." />
+</a>
 
-## Now and next
+<sub>Refreshed daily from GitHub's public contribution calendar. <a href="./data/activity.json">View the data</a>.</sub>
 
-- Getting sharper at the fundamentals: honest type hints, tests I actually trust, clean packaging with `uv`.
-- Going deeper on API and contract testing, and what really breaks between a spec and a running service.
-- Making GitHub Actions handle the boring parts: scheduled checks, badges, reports on Pages.
-- Next for driftcheck: wider OpenAPI coverage and friendlier diff output. Then a second small project once this one earns it.
+---
 
-## Reach me
-
-- GitHub — [@Godavenger](https://github.com/Godavenger)
-- Email — sharanyamondal9@gmail.com
-- Bugs, feedback, and nitpicks on driftcheck are genuinely welcome.
-
-## By the numbers
-
-<div align="center">
-
-<img height="165" alt="Godavenger's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Godavenger&show_icons=true&hide_border=true&count_private=true&theme=tokyonight" />
-<img height="165" alt="Most-used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Godavenger&layout=donut&hide_border=true&theme=tokyonight" />
-
-<img alt="Contribution streak" src="https://streak-stats.demolab.com/?user=Godavenger&hide_border=true&theme=tokyonight" />
-
-<img alt="Contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=Godavenger&hide_border=true&theme=tokyo-night&area=true" />
-
-<img alt="Trophies" src="https://github-profile-trophy.vercel.app/?username=Godavenger&theme=tokyonight&no-frame=true&column=7&margin-w=4" />
-
-Building in the open as <b>@Godavenger</b>.
-
-</div>
+<p align="center">
+  <strong>Curious Mind. Research-Driven. Builder at Heart.</strong><br />
+  <sub>Learning in public, one thoughtful experiment and one finished project at a time.</sub><br /><br />
+  <a href="https://github.com/Godavenger">@Godavenger</a> &nbsp; · &nbsp;
+  <a href="mailto:sharanyamondal9@gmail.com">Email</a>
+</p>

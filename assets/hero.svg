@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-labelledby="title description">
+  <title id="title">Sharanya Mondal — AI / ML Engineer in Progress</title>
+  <desc id="description">Research, experimentation, and engineering. Curious Mind. Research-Driven. Builder at Heart. A cyan neural network glows softly against a dark research notebook background.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0c1721"/>
+      <stop offset="1" stop-color="#070d14"/>
+    </linearGradient>
+    <radialGradient id="atmosphere">
+      <stop stop-color="#16424d" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#16424d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rule">
+      <stop stop-color="#67dfeb" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#67dfeb" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#9ec9d4" stroke-opacity=".035"/>
+    </pattern>
+    <filter id="glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="2.5"/>
+    </filter>
+    <style>
+      .sans { font-family: 'Segoe UI', Arial, sans-serif; }
+      .mono { font-family: 'Cascadia Code', Consolas, monospace; }
+      .signal { stroke-dasharray: 5 51; animation: signal 11s linear infinite; }
+      .signal.delayed { animation-delay: -5.5s; }
+      .breathe { animation: breathe 6s ease-in-out infinite; }
+      .breathe.delayed { animation-delay: -3s; }
+      @keyframes signal { to { stroke-dashoffset: -112; } }
+      @keyframes breathe { 0%, 100% { opacity: .42; } 50% { opacity: .85; } }
+      @media (prefers-reduced-motion: reduce) {
+        .signal, .breathe { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <rect x=".5" y=".5" width="999" height="319" rx="16" fill="url(#background)" stroke="#223341"/>
+  <rect x="1" y="1" width="998" height="318" rx="16" fill="url(#grid)"/>
+  <ellipse cx="817" cy="151" rx="218" ry="200" fill="url(#atmosphere)"/>
+  <path d="M46 1H154" stroke="#6ce3ed" stroke-opacity=".65"/>
+
+  <g class="sans">
+    <text x="46" y="42" class="mono" font-size="10" letter-spacing="2" fill="#7b9fac">GODAVENGER / RESEARCH NOTEBOOK</text>
+    <text x="43" y="113" font-size="55" font-weight="600" letter-spacing="-2" fill="#edf6fb">Sharanya Mondal</text>
+    <text x="46" y="156" font-size="24" font-weight="400" letter-spacing="-.4" fill="#78dbe5">AI / ML Engineer in Progress</text>
+    <text x="46" y="202" font-size="15" letter-spacing=".4" fill="#a8bbc8">Research <tspan fill="#4d7583">·</tspan> Experimentation <tspan fill="#4d7583">·</tspan> Engineering</text>
+    <path d="M46 232H553" stroke="url(#rule)"/>
+    <text x="46" y="267" font-size="15" letter-spacing=".1" fill="#c6d5df">Curious Mind. Research-Driven. Builder at Heart.</text>
+    <text x="46" y="294" class="mono" font-size="9" letter-spacing="1.5" fill="#668593">KEEP ASKING. KEEP BUILDING.</text>
+  </g>
+
+  <g aria-hidden="true">
+    <path d="M655 65V48H673M937 48H955V65M655 253V270H673M937 270H955V253" fill="none" stroke="#497682" stroke-opacity=".7"/>
+    <text x="677" y="59" class="mono" font-size="8" letter-spacing="1.8" fill="#7b9fac">PATTERNS INTO POSSIBILITIES</text>
+
+    <g fill="none" stroke="#6095a3" stroke-width="1" stroke-opacity=".23">
+      <path d="M692 109L767 91M692 109L767 137M692 109L767 183M692 161L767 91M692 161L767 137M692 161L767 183M692 161L767 229M692 213L767 137M692 213L767 183M692 213L767 229"/>
+      <path d="M767 91L841 109M767 91L841 161M767 137L841 109M767 137L841 161M767 137L841 213M767 183L841 109M767 183L841 161M767 183L841 213M767 229L841 161M767 229L841 213"/>
+      <path d="M841 109L916 137M841 109L916 185M841 161L916 137M841 161L916 185M841 213L916 137M841 213L916 185"/>
+    </g>
+    <g fill="none" stroke="#70d9e7" stroke-width="1.1" stroke-opacity=".45">
+      <path d="M692 109L767 137L841 161L916 137"/>
+      <path d="M692 213L767 183L841 161L916 185"/>
+    </g>
+    <g fill="none" stroke="#b2f5fb" stroke-width="1.5" stroke-opacity=".85">
+      <path class="signal" d="M692 109L767 137L841 161L916 137"/>
+      <path class="signal delayed" d="M692 213L767 183L841 161L916 185"/>
+    </g>
+
+    <g fill="#0d202b" stroke="#548c9c" stroke-width="1.2">
+      <circle cx="692" cy="109" r="5"/><circle cx="692" cy="161" r="5"/><circle cx="692" cy="213" r="5"/>
+      <circle cx="767" cy="91" r="5"/><circle cx="767" cy="137" r="5"/><circle cx="767" cy="183" r="5"/><circle cx="767" cy="229" r="5"/>
+      <circle cx="841" cy="109" r="5"/><circle cx="841" cy="161" r="6"/><circle cx="841" cy="213" r="5"/>
+      <circle cx="916" cy="137" r="5"/><circle cx="916" cy="185" r="5"/>
+    </g>
+    <g fill="#7ae6f0">
+      <circle cx="692" cy="109" r="2"/><circle cx="767" cy="137" r="2"/>
+      <circle cx="767" cy="183" r="2"/><circle cx="841" cy="161" r="2.5"/>
+      <circle cx="916" cy="137" r="2"/><circle cx="916" cy="185" r="2"/>
+    </g>
+    <g class="breathe" fill="#67e5ef" filter="url(#glow)" opacity=".42">
+      <circle cx="767" cy="137" r="5"/><circle cx="841" cy="161" r="7"/>
+    </g>
+    <g class="breathe delayed" fill="#67e5ef" filter="url(#glow)" opacity=".42">
+      <circle cx="767" cy="183" r="4"/><circle cx="916" cy="185" r="4"/>
+    </g>
+    <g class="mono" font-size="8" letter-spacing="1.4" fill="#668593">
+      <text x="692" y="256" text-anchor="middle">SIGNAL</text>
+      <text x="803" y="256" text-anchor="middle">CONNECTION</text>
+      <text x="916" y="256" text-anchor="middle">IDEA</text>
+    </g>
+    <circle cx="661" cy="293" r="2" fill="#75d8e2"/>
+    <text x="672" y="296" class="mono" font-size="8" letter-spacing="1.2" fill="#76929f">ALWAYS A WORK IN PROGRESS</text>
+  </g>
+</svg>
